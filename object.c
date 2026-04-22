@@ -139,7 +139,7 @@ int object_write(ObjectType type, const void *data, size_t len, ObjectID *id_out
 
     return 0;
 }
-
+// object_read parses header
 int object_read(const ObjectID *id, ObjectType *type_out, void **data_out, size_t *len_out) {
     // Step 1: Get the file path
     char path[512];
@@ -226,3 +226,4 @@ int object_read(const ObjectID *id, ObjectType *type_out, void **data_out, size_
     free(buf);
     return 0;
 }
+// integrity check complete
