@@ -7,9 +7,8 @@
 //   parent <64-char-hex-hash>        ← omitted for the first commit
 //   author <name> <unix-timestamp>
 //   committer <name> <unix-timestamp>
-//
 //   <commit message>
-//
+// update HEAD after commit
 // Note: there is a blank line between the headers and the message.
 
 #include "commit.h"
