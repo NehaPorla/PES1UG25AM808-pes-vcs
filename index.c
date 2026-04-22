@@ -257,7 +257,8 @@ int index_add(Index *index, const char *path) {
         e->path[sizeof(e->path) - 1] = '\0';
         index->count++;
     }
-
+     // stack overflow fix
     // Step 5: Save the updated index
     return index_save(index);
 }
+//phase 3 complete
