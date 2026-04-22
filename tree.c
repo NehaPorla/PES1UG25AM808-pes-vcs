@@ -65,6 +65,7 @@ int tree_parse(const void *data, size_t len, Tree *tree_out) {
 static int compare_tree_entries(const void *a, const void *b) {
     return strcmp(((const TreeEntry *)a)->name, ((const TreeEntry *)b)->name);
 }
+// nested dirs handled 
 
 int tree_serialize(const Tree *tree, void **data_out, size_t *len_out) {
     size_t max_size = tree->count * 296;
