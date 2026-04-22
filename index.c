@@ -155,6 +155,7 @@ int index_load(Index *index) {
 }
 
 int index_save(const Index *index) {
+// index_add complete
     // Make sure .pes directory exists
     mkdir(PES_DIR, 0755);
 
