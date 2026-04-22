@@ -66,6 +66,7 @@ static int compare_tree_entries(const void *a, const void *b) {
     return strcmp(((const TreeEntry *)a)->name, ((const TreeEntry *)b)->name);
 }
 // nested dirs handled 
+// tree_from_index completeO
 
 int tree_serialize(const Tree *tree, void **data_out, size_t *len_out) {
     size_t max_size = tree->count * 296;
