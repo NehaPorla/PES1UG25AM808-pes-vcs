@@ -23,6 +23,7 @@
 #include <fcntl.h>
 
 // Forward declarations (implemented in object.c)
+// serialize commit object
 int object_write(ObjectType type, const void *data, size_t len, ObjectID *id_out);
 int object_read(const ObjectID *id, ObjectType *type_out, void **data_out, size_t *len_out);
 
