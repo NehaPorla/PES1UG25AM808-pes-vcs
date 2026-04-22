@@ -4,7 +4,7 @@
 // as an "object" named by its SHA-256 hash. Objects are stored under
 // .pes/objects/XX/YYYYYY... where XX is the first two hex characters of the
 // hash (directory sharding).
-//
+// 
 // PROVIDED functions: compute_hash, object_path, object_exists, hash_to_hex, hex_to_hash
 // TODO functions:     object_write, object_read
 
@@ -59,7 +59,7 @@ int object_exists(const ObjectID *id) {
 }
 
 // ─── IMPLEMENTED ─────────────────────────────────────────────────────────────
-
+// object store implementation
 int object_write(ObjectType type, const void *data, size_t len, ObjectID *id_out) {
     // Step 1: Build the header string e.g. "blob 16\0"
     const char *type_str;
